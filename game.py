@@ -1,5 +1,5 @@
 import os
-import pygame
+import pygame # pip install pygame
 import random
 
 pygame.mixer.init()
@@ -45,7 +45,7 @@ def welcome():
                 exit_game = True
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    pygame.mixer.music.load('bg.mp3')
+                    pygame.mixer.music.load('bg.mp3') # You can keep any music file for the background music while playing game
                     pygame.mixer.music.play()
                     gameloop()
 
